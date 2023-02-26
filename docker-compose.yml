@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  programminglanguageguide_postgresql:
+    image: postgres:14.1
+  programminglanguageguide_redis:
+    image: redis
+  programminglanguageguide_api:
+    image: ${DOCKER_REGISTRY-}programminglanguageguide_api
+    build:
+      context: .
+      dockerfile: Systems/Api/ProgrammingLanguageGuide/Dockerfile
+    depends_on:
+      - programminglanguageguide_postgresql
+      - programminglanguageguide_redis
