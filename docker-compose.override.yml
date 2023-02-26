@@ -1,0 +1,35 @@
+version: '3.4'
+
+services:
+  programminglanguageguide_postgresql:
+      environment:
+        - POSTGRES_NAME=postgres
+        - POSTGRES_USER=postgres
+        - POSTGRES_PASSWORD=postgres
+      ports:
+        - "5432:5432"
+      networks:
+        - shared_ProgrammingLangugeGuide_net
+      volumes:
+        - ~/.docker-conf/postgresql/data/:/var/lib/postgresql/data
+
+  programminglanguageguide_redis:
+      ports:
+        - '6379:6379'
+      networks:
+        - shared_ProgrammingLangugeGuide_net
+      volumes:
+        - ~/.docker-conf/redis/data/:/data
+
+  programminglanguageguide_api:
+      ports:
+        - "10000:80"
+      networks:
+        - shared_ProgrammingLangugeGuide_net
+      env_file:
+        - env.api
+
+networks:
+  shared_ProgrammingLangugeGuide_net:
+      name: Programming_Languge_Guide
+      driver: bridge
