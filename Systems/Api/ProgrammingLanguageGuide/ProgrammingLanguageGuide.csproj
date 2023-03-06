@@ -31,6 +31,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Data\ProgrammingLanguageGuide.Context\ProgrammingLanguageGuide.Context.csproj" />
     <ProjectReference Include="..\..\..\Services\ProgrammingLanguagesGuide.Services.Settings\ProgrammingLanguageGuide.Services.Settings.csproj" />
     <ProjectReference Include="..\..\..\Shared\ProgrammingLanguagesGuide.Common\ProgrammingLanguageGuide.Common.csproj" />
     <ProjectReference Include="..\..\..\Shared\ProgrammingLanguagesGuide.Settings\ProgrammingLanguageGuide.Settings.csproj" />

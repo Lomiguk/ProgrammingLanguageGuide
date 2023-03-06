@@ -1,5 +1,6 @@
 using ProgrammingLanguageGuide.Api;
 using ProgrammingLanguageGuide.Configuration;
+using ProgrammingLanguageGuide.Context;
 using ProgrammingLanguageGuide.Services.Settings;
 using ProgrammingLanguageGuide.Settings;
 
@@ -16,6 +17,8 @@ var services = builder.Services;
 
 services.AddHttpContextAccessor();
 services.AddAppCors();
+
+services.AddAppDbContext();
 
 services.AddAppHealthChecks();
 services.AddAppVersioning();
