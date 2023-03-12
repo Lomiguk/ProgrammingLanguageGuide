@@ -34,12 +34,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProgrammingLanguageGuide.Ap
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{5C7C73D9-28ED-4129-A0AC-459314893CD2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgrammingLanguageGuide.Context", "Data\ProgrammingLanguageGuide.Context\ProgrammingLanguageGuide.Context.csproj", "{5F396678-D749-40F8-B577-831D723EC2C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProgrammingLanguageGuide.Context", "Data\ProgrammingLanguageGuide.Context\ProgrammingLanguageGuide.Context.csproj", "{5F396678-D749-40F8-B577-831D723EC2C0}"
 	ProjectSection(ProjectDependencies) = postProject
 		{C57643FE-1DE9-4EC9-9115-F90F83468F77} = {C57643FE-1DE9-4EC9-9115-F90F83468F77}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgrammingLanguageGuide.Context.Entities", "Data\ProgrammingLanguageGuide.Context.Entities\ProgrammingLanguageGuide.Context.Entities.csproj", "{C57643FE-1DE9-4EC9-9115-F90F83468F77}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProgrammingLanguageGuide.Context.Entities", "Data\ProgrammingLanguageGuide.Context.Entities\ProgrammingLanguageGuide.Context.Entities.csproj", "{C57643FE-1DE9-4EC9-9115-F90F83468F77}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Migrations", "Migrations", "{925913E2-4D13-446B-B8B3-21056AD1CC83}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +95,7 @@ Global
 		{29B7FD7E-C0D8-43B5-9AB3-881BDF36D0C8} = {F5C31A4B-7860-4C7A-8598-CE104014A1F9}
 		{5F396678-D749-40F8-B577-831D723EC2C0} = {E1478235-21C6-4231-9D52-9BE1E7C6E006}
 		{C57643FE-1DE9-4EC9-9115-F90F83468F77} = {E1478235-21C6-4231-9D52-9BE1E7C6E006}
+		{925913E2-4D13-446B-B8B3-21056AD1CC83} = {E1478235-21C6-4231-9D52-9BE1E7C6E006}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2FABCFE0-665C-42E9-B4E3-31901F9A5C92}
